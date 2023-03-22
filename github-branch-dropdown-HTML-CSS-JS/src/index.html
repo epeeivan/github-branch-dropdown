@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../dist/output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="">
+    <div class="flex p-5 space-x-10">
+        <!-- collapsable box -->
+        <div class="rounded bg-slate-200 p-2 space-y-2">
+            <!-- header -->
+            <div class="flex">
+                <!-- left side -->
+                <div class="flex space-x-2 mr-auto">
+                    <i icon-name="chevron-down" class="my-auto" width="15"></i>
+                    <i icon-name="chevron-up" class=" hidden" width="15"></i>
+                    <span>Open</span>
+                </div>
+
+                <!-- right side -->
+                <div>
+                    <button class="flex w-[20px] h-[20px] bg-white border-[1px] rounded border-slate-400 ">
+                        <i class="m-auto" icon-name="plus" height="15" width="15"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- body -->
+            <div class="">
+                <!-- items -->
+                <div class="bg-white rounded space-y-3 px-3 py-2">
+                    <!-- title -->
+                    <h1 class="font-bold capitalize">Utilisation des attributs PHP 8</h1>
+                    <div class="space-y-1 flex flex-wrap">
+                        <!-- badge -->
+                        <div class="rounded-full bg-green-700 text-white px-2">
+                            feature
+                        </div>
+                        <!-- bottom -->
+                        <div class="flex w-full">
+                            <!-- left-side -->
+                            <div class="flex space-x-3 mr-auto">
+                                <!-- text-icon -->
+                                <div class="flex space-x-2">
+                                    <i icon-name="box" width="15"></i>
+                                    <span class="block">#22</span>
+                                </div>
+                                <!-- text-icon -->
+                                <div class="flex space-x-2 text-red-600">
+                                    <i icon-name="calendar" width="15"></i>
+                                    <span class="block">Mar 7</span>
+                                </div>
+                            </div>
+                            <!-- right side -->
+                            <div>
+                                <!-- icon or image -->
+                                <i class="" icon-name="image" width="15"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dropdown -->
+        <div class="relative">
+            <!-- button -->
+            <button class="rounded flex space-x-2 border-[1px] border-slate-500 px-3 py-1">
+                <span class="block">main</span>
+                <div class="">
+                    <i icon-name="chevron-down" class=" my-auto" width="15"></i>
+                    <i icon-name="chevron-up" class="hidden my-auto" width="15"></i>
+                </div>
+            </button>
+            <!-- dropwown -->
+            <div class="absolute block bg-white border-[1px] border-slate-400 mt-2 rounded">
+                <!-- header -->
+                <div class="p-2 py-3">
+                    <h1 class="font-bold">Select a git version</h1>
+                </div>
+                <!-- search item -->
+                <div class="flex px-2 border-2 border-blue-300 rounded">
+                    <div class="flex text-slate-500">
+                        <i icon-name="search" width="15" class="my-auto"></i>
+                    </div>
+                    <div>
+                        <input type="text" ref="searchInput" class="outline-none focus:outline-none p-2"
+                            placeholder="Search for a git version">
+                    </div>
+                </div>
+                <!-- branches / ites -->
+                <div>
+                    <!-- title -->
+                    <div class="p-2 flex space-x-2">
+                        <h1 class="font-bold">Branches</h1> <span class="block bg-slate-200 rounded-full px-2 text-slate-500 font-bold py-0 ">2</span>
+                    </div>
+                    <!-- options -->
+                    <div class="p-2">
+                        <!-- items -->
+                        <div class="p-2 rounded flex space-x-2">
+                            <i icon-name="Check" with="15" class="text-white"></i>
+                            <span>
+                                develop
+                            </span>
+                        </div>
+                        <div class="p-2 rounded flex space-x-2 bg-slate-100">
+                            <i icon-name="Check" width="15" class="text-blue-500"></i>
+                            <span>
+                                main
+                                <span class="bg-blue-100 px-3 rounded-full font-bold text-xs text-blue-500">default</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
